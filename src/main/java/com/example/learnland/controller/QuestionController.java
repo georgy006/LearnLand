@@ -20,7 +20,6 @@ public class QuestionController {
 
     @PostMapping
     public Question createQuestion(@RequestBody Question question) throws IOException {
-
         return questionService.saveQuestion(question);
     }
 }

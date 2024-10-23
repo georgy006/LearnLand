@@ -7,6 +7,8 @@ import com.example.learnland.service.AIService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class AIInterectionServiceImpl implements AIInterectionService {
 
@@ -15,7 +17,7 @@ public class AIInterectionServiceImpl implements AIInterectionService {
     @Autowired
     AIService aiService;
     @Override
-    public AIInteraction createInterection(String question) {
-        return null;
+    public List<AIInteraction> getInterection() {
+        return aiInterectionRepository.findAll();
     }
 }
