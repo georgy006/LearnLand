@@ -1,0 +1,15 @@
+--INSERT INTO ai_interactions (question, user_response)
+--VALUES
+--    ('What is the capital of France?', 'The capital of France is Paris.'),
+--    ('How do you conjugate the verb "to be" in the present tense?', 'I am, You are, He/She/It is, We are, They are.'),
+--    ('Translate "Good morning" to Spanish.', 'Buenos días.'),
+--    ('What is the past tense of "run"?', 'The past tense of "run" is "ran".'),
+--    ('Name three colors in German.', 'Rot, Blau, Grün.');
+--
+--INSERT INTO history (interaction_id, description)
+--VALUES
+--    (1, 'User correctly identified the capital of France.'),
+--    (2, 'User provided a detailed conjugation of the verb "to be".'),
+--    (3, 'User accurately translated the phrase to Spanish.'),
+--    (4, 'User gave the correct past tense of "run".'),
+--    (5, 'User successfully named three colors in German.');
