@@ -34,7 +34,6 @@ public class HistoryServiceImpl implements HistoryService {
 
     @Override
     public HistoryDTO getHistoryById(Long id) {
-
         return historyRepository.findById(id)
                 .map(historyMapper::toDTO)
                 .orElse(null);

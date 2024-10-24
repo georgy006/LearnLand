@@ -9,12 +9,12 @@ import com.example.learnland.repositories.QuestionRepository;
 import com.example.learnland.repositories.ResponseRepository;
 import com.example.learnland.service.AIService;
 import com.example.learnland.service.QuestionService;
-import com.example.learnland.service.ResponseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Service
 public class QuestionServiceImpl implements QuestionService {
@@ -40,5 +40,15 @@ public class QuestionServiceImpl implements QuestionService {
         aiInterectionRepository.save(aiInteraction);
 
         return save;
+    }
+
+    @Override
+    public List<Question> getAllQuestion() {
+        return questionRepository.findAll();
+    }
+
+    @Override
+    public Question getQuestionById(Long id) {
+        return questionRepository.findById(id).orElse(null);
     }
 }

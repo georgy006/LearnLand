@@ -1,10 +1,8 @@
 package com.example.learnland.controller;
 
 import com.example.learnland.models.AIInteraction;
-import com.example.learnland.repositories.AIInterectionRepository;
 import com.example.learnland.service.AIInterectionService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,5 +18,8 @@ public class AIInterectionController {
     public List<AIInteraction> getInterection(){
         return aiInterectionService.getInterection();
     }
-
+//    @GetMapping
+//    public List<AIInteractionDTO> getInterectionDTO(){
+//        return aiInterectionService.getInterectionDTO();
+//    }
 }
